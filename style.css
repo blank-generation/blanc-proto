@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Syncopate:wght@700&display=swap');
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&family=Syncopate:wght@700&display=swap');
 
 #logo {
     margin: 0;
@@ -30,13 +32,11 @@
     height: 100%;
 }
 
+
+
 h2.heroText {
     font-size: 64px;
-    width: 100%;
-    /* position: relative;
-    right: 50%; */
-
-    /* z-index: 9900; */
+    /* width: 100%; */
     text-align: right;
     line-height: 1;
     text-transform: uppercase;
@@ -47,7 +47,14 @@ h2.heroText {
 .heroCont {
     position: absolute;
     right: 60%;
-    top: 40%;
+    top: 35%;
+    padding-left: 30%;
+
+}
+
+.tnb{
+   text-align: right;
+   
 }
 
 button.shopBtn {
@@ -60,7 +67,7 @@ button.shopBtn {
     padding: 10px 20px;
     color: white;
     background-color: #394951;
-  
+    font-weight: 700;
     border: none;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 18px;
@@ -72,9 +79,9 @@ button.shopBtn {
 .tBtn {
     position: absolute;
     top:20%;
-    right:20%;
-    -ms-transform: translate(-20%, -20%);
-    transform: translate(-20%, -20%);
+    left:75%;
+    -ms-transform: translate(-75%, -20%);
+    transform: translate(-75%, -20%);
 }
  .tBtn button {
     margin-top:12px;
@@ -90,6 +97,7 @@ button.shopBtn {
     border: solid 2px #394951;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 18px;
+    font-weight: 700;
  }
 
  .tBtn button:hover {
@@ -141,6 +149,7 @@ button.active {
     border: none;
     font-size: 18px;
     font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 700;
     text-align: right;
 }
 
@@ -226,6 +235,7 @@ button.active {
 html,
 body {
     font-family: 'Darker Grotesque', sans-serif;
+    font-weight: 400;
     margin: 0;
     height: 100%;
 

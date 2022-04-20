@@ -48,7 +48,7 @@ function draw() {
     rotateX(3);
     rotateZ(0);
 
-    translate(width / 6, -height / 16);
+    translate(width / 6,-height/16);
     noFill();
     stroke(100);
     strokeWeight(2)
