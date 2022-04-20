@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blanc</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="sketch.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="menu">
+        <div> <img id="items" src="/assets/items.png" alt=""></div>
+        <div> <img id="logo" src="/assets/logo.png" alt=""></div>
+        <div> <img id="ham" src="/assets/ham.png" alt=""></div>
+    </div>
+
+    <div class="cont">
+        <div class="heroCont">
+            <h2 class="heroText">Fashion <br>for the <br>Individual </h2>
+            <a href="https://www.figma.com/file/1ShzXDeScOyQOV2rYNX7e5/Blanc-Prototype" target="_blank" style="text-decoration: none;">
+                <button class="shopBtn">Enter Site <img class="arrow" src="/assets/ir.png" alt=""></button>
+            </a>
+        </div>
+
+        <div class="tmenu">
+
+            <button data-collar="0" class="active" onclick="setTee(this)">Round Neck Tee </button>
+            <button data-collar="1" onclick="setTee(this)">Collared Polo Tee</button>
+
+        </div>
+
+        <div class="colors">
+
+            <div class="color" id="c1" style="background-color: #3A4A52" onclick="setColor(this)"></div>
+            <div class="color" id="c2" style="background-color: #3F551D" onclick="setColor(this)"></div>
+            <div class="color" id="c3" style="background-color: #CEC0B0" onclick="setColor(this)"></div>
+            <div class="color" id="c4" style="background-color: #C3E5FA" onclick="setColor(this)"></div>
+            <div class="color" id="c5" style="background-color: #1e2024" onclick="setColor(this)"></div>
+
+        </div>
+
+        <div class="tBtn">
+            <button> Explore Collection<img class="arrow" src="/assets/ir.png" alt=""></button>
+        </div>
+    </div>
+
+
+
+
+    <div class="cursor"></div>
+    <div class="cursor2"></div>
+
+    <!-- <script src="baby.js"></script> -->
+    <script>
+
+        let cursor = document.querySelector('.cursor');
+        let cursorinner = document.querySelector('.cursor2');
+        let a = document.querySelectorAll('div.color, .tmenu button , button.shopBtn,  .tBtn button');
+
+        document.addEventListener('mousemove', function (e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            cursor.style.transform = `translate3d(calc(${e.clientX}px - 50%), calc(${e.clientY}px - 50%), 0)`
+        });
+
+        document.addEventListener('mousemove', function (e) {
+            let x = e.clientX;
+            let y = e.clientY;
+            cursorinner.style.left = x + 'px';
+            cursorinner.style.top = y + 'px';
+        });
+
+        document.addEventListener('mousedown', function () {
+            cursor.classList.add('click');
+            cursorinner.classList.add('cursorinnerhover')
+        });
+
+        document.addEventListener('mouseup', function () {
+            cursor.classList.remove('click')
+            cursorinner.classList.remove('cursorinnerhover')
+        });
+
+        a.forEach(item => {
+            item.addEventListener('mouseover', () => {
+                cursor.classList.add('hover');
+            });
+            item.addEventListener('mouseleave', () => {
+                cursor.classList.remove('hover');
+            });
+        })
+
+
+    </script>
+</body>
+
+</html>

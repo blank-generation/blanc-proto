@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@900&family=Syncopate:wght@700&display=swap');
+
+#logo {
+    margin: 0;
+    position: absolute;
+    /* top: 50%; */
+    left: 50%;
+    -ms-transform: translate(-50%, 0%);
+    transform: translate(-50%, 0%);
+}
+
+#ham {
+    position: absolute;
+    right: 5%;
+    top:3%;
+}
+
+#items {
+    position: absolute;
+    left: 5%;
+    top:3%;
+}
+
+.cont {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+h2.heroText {
+    font-size: 64px;
+    width: 100%;
+    /* position: relative;
+    right: 50%; */
+
+    /* z-index: 9900; */
+    text-align: right;
+    line-height: 1;
+    text-transform: uppercase;
+    color: #394951;
+    font-family: 'Syncopate', sans-serif;
+}
+
+.heroCont {
+    position: absolute;
+    right: 60%;
+    top: 40%;
+}
+
+button.shopBtn {
+    margin-top:12px;
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    line-height: 1;
+    transition: 0.6s;
+    padding: 10px 20px;
+    color: white;
+    background-color: #394951;
+  
+    border: none;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+}
+
+.tBtn img{
+    padding-left: 10px;
+}
+.tBtn {
+    position: absolute;
+    top:18%;
+    right:22%;
+}
+ .tBtn button {
+    margin-top:12px;
+    display: inline-flex;
+    justify-content: center; 
+    align-items: center;
+    line-height: 1;
+    transition: 0.6s;
+    padding: 10px 20px;
+    color: 394951;
+    /* background-color: #394951; */
+    background-color: white;
+    border: solid 2px #394951;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 18px;
+ }
+
+ .tBtn button:hover {
+    transition: 0.4s;
+    font-size: 22px;
+    padding: 14px 30px;
+    -webkit-box-shadow: 12px -12px 1px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: 12px -12px 1px 0px rgba(0,0,0,0.45);
+    box-shadow: 12px -12px 1px 0px rgba(0,0,0,0.45);
+
+}
+
+button.shopBtn:hover {
+    transition: 0.4s;
+    font-size: 22px;
+    padding: 14px 30px;
+    -webkit-box-shadow: -12px 12px 1px 0px rgba(0,0,0,0.45);
+    -moz-box-shadow: -12px 12px 1px 0px rgba(0,0,0,0.45);
+    box-shadow: -12px 12px 1px 0px rgba(0,0,0,0.45);
+
+}
+
+.shopBtn img.arrow {
+    padding-left: 10px;
+    filter: invert();
+}
+
+button.active {
+    transition: 0.4s;
+    font-size: 24px !important;
+    text-decoration-line: underline;
+    /* color: #394951; */
+    opacity: 1 !important;
+}
+
+.tmenu {
+
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 45%;
+    /* margin-right: 36px; */
+}
+
+.tmenu button {
+    transition: 0.5s;
+    opacity: 0.4;
+    background: none;
+    border: none;
+    font-size: 18px;
+    font-family: 'Darker Grotesque', sans-serif;
+    text-align: right;
+}
+
+.tmenu button:hover {
+    transition: 0.4s;
+    /* font-size: 28px!important; */
+}
+
+.color {
+
+    padding: 16px;
+    margin: 6px 0px;
+    transition: 0.4s;
+    border: 1px solid white;
+}
+
+.color:hover {
+    padding: 30px;
+    border-radius: 12px;
+    transition: 0.6s;
+}
+
+.colors {
+    /* display: flex;
+    flex-direction:column; */
+    position: absolute;
+    bottom: 28%;
+    right: 8%;
+    padding:12px;
+    /* border-radius: 16px; */
+    border: 2px solid #394951;
+    background-color: white;
+        -webkit-box-shadow: -3px 6px 6px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: -3px 6px 6px 0px rgba(0,0,0,0.1);
+    box-shadow: -3px 6px 6px 0px rgba(0,0,0,0.1);
+}
+
+
+
+.cursor {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    border: 1px solid black;
+    transition: all 200ms ease-out;
+    position: fixed;
+    pointer-events: none;
+    left: 0;
+    top: 0;
+    transform: translate(calc(-50% + 15px), -50%);
+}
+
+.cursor2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    background-color: black;
+    opacity: .3;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    transition: width .3s, height .3s, opacity .3s;
+}
+
+* {
+    cursor: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hover {
+    background-color: red;
+    opacity: 0.5;
+}
+
+.cursorinnerhover {
+    width: 50px;
+    height: 50px;
+    opacity: .5;
+}
+
+html,
+body {
+    font-family: 'Darker Grotesque', sans-serif;
+    margin: 0;
+    height: 100%;
+
+    overflow: hidden;
+}
