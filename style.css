@@ -71,8 +71,10 @@ button.shopBtn {
 }
 .tBtn {
     position: absolute;
-    top:18%;
-    right:22%;
+    top:20%;
+    right:20%;
+    -ms-transform: translate(-20%, -20%);
+    transform: translate(-20%, -20%);
 }
  .tBtn button {
     margin-top:12px;
@@ -157,7 +159,7 @@ button.active {
 
 .color:hover {
     padding: 30px;
-    border-radius: 12px;
+    /* border-radius: 12px; */
     transition: 0.6s;
 }
 
