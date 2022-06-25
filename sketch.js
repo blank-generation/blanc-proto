@@ -10,7 +10,8 @@ p5.disableFriendlyErrors = true;
 
 function preload() {
 
-    ts = loadModel('assets/T-shirt 3D-short sleeve.obj', true);
+    //ts = loadModel('assets/T-shirt 3D-short sleeve.obj', true);
+    ts = loadModel('assets/mesa.obj', true);
     tp = loadModel('assets/T-shirt Polo Short Sleeve.obj', true);
 
 }
